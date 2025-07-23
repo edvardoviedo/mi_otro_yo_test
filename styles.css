@@ -1540,3 +1540,8 @@ a i {
   object-fit: cover;
   z-index: -3;
 }
+.hero {
+  position: relative;
+  height: 100vh; /* o la altura que tú necesites */
+  overflow: hidden;
+}
