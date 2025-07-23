@@ -431,13 +431,13 @@ body {
 
   .hero-subtitle {
     font-size: var(--fs-xl);
-    margin-bottom: calc(var(--spacing-2xl) - 3.5cm); /* Subir párrafo 3.5cm */
+    margin-bottom: calc(var(--spacing-2xl) - 7cm); /* Subir párrafo 3.5cm */
   }
 
   .hero-buttons {
     flex-direction: row;
     justify-content: center;
-    margin-top: calc(0px - 3.5cm); /* Subir botones 3.5cm */
+    margin-top: calc(0px - 7cm); /* Subir botones 3.5cm */
   }
 }
 
