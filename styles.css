@@ -1556,3 +1556,6 @@ a i {
 .hero-buttons {
   transform: translateY(-3.6cm);
 }
+.hero-title {
+  transform: translateY(-3cm);
+}
