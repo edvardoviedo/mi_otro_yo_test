@@ -13,7 +13,28 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeFormHandling();
   initializeIntersectionObserver();
   initializeSmoothScrolling();
+  initializeVideoLoading();
 });
+
+// ===== MANEJO DE CARGA DE VIDEO =====
+function initializeVideoLoading() {
+  const heroVideo = document.querySelector(".hero-video");
+  const heroLogo = document.querySelector(".hero-logo");
+  
+  if (heroVideo && heroLogo) {
+    // Mostrar logo cuando el video esté listo para reproducir
+    heroVideo.addEventListener("canplaythrough", function() {
+      heroLogo.classList.add("loaded");
+    });
+    
+    // Fallback: mostrar logo después de 2 segundos si el video no carga
+    setTimeout(() => {
+      if (!heroLogo.classList.contains("loaded")) {
+        heroLogo.classList.add("loaded");
+      }
+    }, 2000);
+  }
+}
 
 // ===== ANIMACIONES DE INICIALIZACIÓN =====
 function initializeAnimations() {
