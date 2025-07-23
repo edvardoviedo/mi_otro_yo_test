@@ -1545,3 +1545,12 @@ a i {
   height: 100vh; /* o la altura que tú necesites */
   overflow: hidden;
 }
+.hero {
+  position: relative;
+  height: 100vh; /* o la altura que tú decidas */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente si quieres */
+}
+
