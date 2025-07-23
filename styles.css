@@ -1508,4 +1508,11 @@ a {
 a i {
   text-decoration: none !important;
 }
-
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
