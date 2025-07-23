@@ -1550,9 +1550,9 @@ a i {
   background-color: #000;
 }
 .hero-subtitle {
-  transform: translateY(-5cm);
+  transform: translateY(-3.6cm);
 }
 
 .hero-buttons {
-  transform: translateY(-5cm);
+  transform: translateY(-3.6cm);
 }
