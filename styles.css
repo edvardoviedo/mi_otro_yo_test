@@ -1549,3 +1549,10 @@ a i {
   z-index: -2;
   background-color: #000;
 }
+.hero-subtitle {
+  transform: translateY(-7cm);
+}
+
+.hero-buttons {
+  transform: translateY(-7cm);
+}
