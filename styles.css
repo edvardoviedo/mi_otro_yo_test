@@ -360,7 +360,7 @@ body {
 .hero-title {
   font-family: var(--font-secondary);
   font-size: var(--fs-4xl);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: var(--spacing-md);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -422,7 +422,6 @@ body {
 @media (min-width: 768px) {
   .hero-title {
     font-size: var(--fs-5xl);
-    margin-bottom: calc(var(--spacing-md) + 2cm); /* Bajar logo 2cm */
   }
 
   .hero-year {
@@ -431,13 +430,11 @@ body {
 
   .hero-subtitle {
     font-size: var(--fs-xl);
-    margin-bottom: calc(var(--spacing-2xl) - 7cm); /* Subir párrafo 3.5cm */
   }
 
   .hero-buttons {
     flex-direction: row;
     justify-content: center;
-    margin-top: calc(0px - 7cm); /* Subir botones 3.5cm */
   }
 }
 
@@ -755,6 +752,7 @@ section {
   position: relative;
 }
 
+
 .testimonial-author {
   display: flex;
   align-items: center;
@@ -1054,7 +1052,6 @@ section {
   bottom: var(--spacing-xl);
   right: var(--spacing-xl);
   z-index: 1000;
-  text-decoration: none;
 }
 
 .whatsapp-float a {
@@ -1070,7 +1067,6 @@ section {
   box-shadow: var(--shadow-lg);
   transition: all var(--transition-normal);
   animation: pulse 2s infinite;
-  text-decoration: none;
 }
 
 .whatsapp-float a:hover {
@@ -1180,12 +1176,6 @@ section {
   height: auto;
   display: block;
   margin: 0 auto;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.hero-logo.loaded {
-  opacity: 1;
 }
 .hero-background {
   background-image: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/SUMMERCAMP_MIOTROYO/BACKGROUND.jpg");
@@ -1480,82 +1470,4 @@ select {
 
 .package-card a.btn {
   margin-top: auto;
-}
-.whatsapp-float a,
-.whatsapp-float a i {
-  text-decoration: none;
-}
-.whatsapp-float a i {
-  text-decoration: none;
-  font-style: normal; /* por si acaso */
-}
-.whatsapp-float a svg {
-  text-decoration: none;
-}
-.whatsapp-float a *,
-.whatsapp-float a *::before,
-.whatsapp-float a *::after {
-  text-decoration: none !important;
-}
-.whatsapp-float a {
-  text-decoration: none;
-}
-.whatsapp-float a span {
-  display: flex;
-}
-.whatsapp-float a,
-.whatsapp-float a i,
-.whatsapp-float a svg,
-.whatsapp-float a::before,
-.whatsapp-float a::after {
-  text-decoration: none !important;
-  border: none !important;
-}
-a {
-  text-decoration: none !important;
-}
-a i {
-  text-decoration: none !important;
-}
-.hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  overflow: hidden;
-}
-
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -2;
-  background-color: #000;
-}
-.hero-subtitle {
-  transform: translateY(-3.6cm);
-}
-
-.hero-buttons {
-  transform: translateY(-3.6cm);
-}
-.hero-title {
-  transform: translateY(-3cm);
 }
